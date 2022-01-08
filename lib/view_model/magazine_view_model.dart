@@ -10,4 +10,11 @@ class MagazineViewModel{
   ];
 
   List<TextModel> get magazineViewModel=>_magazineViewModel;
+
+  static MagazineViewModel? _instance;
+  static MagazineViewModel get instance{
+    if(_instance==null) _instance=MagazineViewModel._init();
+    return _instance!;
+  }
+  MagazineViewModel._init();
 }

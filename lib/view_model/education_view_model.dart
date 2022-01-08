@@ -10,4 +10,11 @@ class EducationViewModel{
   ];
 
   List<TextModel> get educationViewModel=>_educationViewModel;
+
+  static EducationViewModel? _instance;
+  static EducationViewModel get instance{
+    if(_instance==null) _instance=EducationViewModel._init();
+    return _instance!;
+  }
+  EducationViewModel._init();
 }

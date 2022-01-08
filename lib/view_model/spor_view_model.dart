@@ -1,7 +1,7 @@
 import 'package:local_data_hive/model/text_model.dart';
 
-class SporViewModel{
-  List<TextModel> _sporViewModel=[
+class SporViewModel {
+  List<TextModel> _sporViewModel = [
     TextModel("Spor Başlık-1", "Spor Açıklama-1"),
     TextModel("Spor Başlık-2", "Spor Açıklama-2"),
     TextModel("Spor Başlık-3", "Spor Açıklama-3"),
@@ -9,5 +9,14 @@ class SporViewModel{
     TextModel("Spor Başlık-5", "Spor Açıklama-5"),
   ];
 
-  List<TextModel> get sporViewModel=>_sporViewModel;
+  List<TextModel> get sporViewModel => _sporViewModel;
+
+  static SporViewModel? _instance;
+
+  static SporViewModel get instance {
+    if (_instance == null) _instance = SporViewModel._init();
+    return _instance!;
+  }
+
+  SporViewModel._init();
 }
