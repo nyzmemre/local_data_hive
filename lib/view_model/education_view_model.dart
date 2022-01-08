@@ -2,11 +2,11 @@ import 'package:local_data_hive/model/text_model.dart';
 
 class EducationViewModel{
   List<TextModel> _educationViewModel=[
-    TextModel("Spor Başlık-1", "Spor Açıklama-1"),
-    TextModel("Spor Başlık-2", "Spor Açıklama-2"),
-    TextModel("Spor Başlık-3", "Spor Açıklama-3"),
-    TextModel("Spor Başlık-4", "Spor Açıklama-4"),
-    TextModel("Spor Başlık-5", "Spor Açıklama-5"),
+    TextModel("Eğitim Başlık-1", "Eğitim Açıklama-1"),
+    TextModel("Eğitim Başlık-2", "Eğitim Açıklama-2"),
+    TextModel("Eğitim Başlık-3", "Eğitim Açıklama-3"),
+    TextModel("Eğitim Başlık-4", "Eğitim Açıklama-4"),
+    TextModel("Eğitim Başlık-5", "Eğitim Açıklama-5"),
   ];
 
   List<TextModel> get educationViewModel=>_educationViewModel;
