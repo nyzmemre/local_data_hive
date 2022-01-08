@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:local_data_hive/model/text_model.dart';
 
+///MyListPage tüm butonlara tıklanınca gösterilecek core widget
+
 class MyListPage extends StatelessWidget {
   final String? appbarTitle;
   final List<TextModel>? list;

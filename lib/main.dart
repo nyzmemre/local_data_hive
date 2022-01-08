@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/homepage_view.dart';
+
 void main() {
   runApp(LocaDataHive());
 }
@@ -13,8 +15,7 @@ class LocaDataHive extends StatelessWidget {
       title:"Local Data Hive",
           home: Scaffold(
         appBar: AppBar(title: Text("Hive Example"),),
-            body: Center(child: Text("Firs Commit"),),
-    )
+            body: HomepageView(),),
     );
   }
 }
